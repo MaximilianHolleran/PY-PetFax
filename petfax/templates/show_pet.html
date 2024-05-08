@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ pet.pet_name }}</title>
+</head>
+<body>
+    <h1>{{ pet.pet_name }}</h1>
+    <img src="{{ pet.pet_photo }}" alt="Photo of {{ pet.pet_name }}" style="width:200px;"/>
+    {% if pet.pet_fact %}
+    <p>{{ pet.pet_fact }}</p>
+    {% endif %}
+</body>
+</html>
